@@ -6,7 +6,7 @@ const Gallery = () => {
   return (
     <>
     <Header/>
-         
+         <div className='bg-gradient-to-r from-blue-900 via-blue-700 to-blue-900'>
         <section>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       <h1 className='text-4xl md:text-5xl font-bold relative top-6 text-red-700'>ATTRACTIVE IMAGES OF OUR SCHOOLS➡️</h1>
@@ -34,7 +34,7 @@ const Gallery = () => {
 
   <div className="max-w-5xl mx-auto p-6">
     <p className='border-2 '></p>
-  <h1 className="text-5xl font-extrabold text-center mb-8 text-blue-900">
+  <h1 className="text-5xl font-extrabold text-center mb-8 text-white">
     SPORTS DAY 🤾🤾
   </h1>
 
@@ -74,7 +74,7 @@ const Gallery = () => {
 
 <div className="max-w-5xl mx-auto p-6">
 <p className='border-2'></p>  
-  <h1 className="text-5xl font-extrabold text-center mb-8 text-blue-900">
+  <h1 className="text-5xl font-extrabold text-center mb-8 text-white">
     ANNUAL DAY 🕺💃
   </h1>
 
@@ -123,6 +123,7 @@ const Gallery = () => {
     </div>
     
   </div>
+</div>
 </div>
   
   <Footer/>

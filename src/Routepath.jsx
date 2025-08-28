@@ -8,6 +8,7 @@ import Gallery from './components/Gallery'
 import Courses from './components/Courses'
 import Header from './reusable components/Header'
 import Footer from './reusable components/Footer'
+import Signup from './components/Signup'
 
 const Routepath = () => {
   return (
@@ -23,6 +24,7 @@ const Routepath = () => {
     <Route path='/courses' element={<Courses/>}></Route>
     <Route path='/header' element={<Header/>}></Route>
     <Route path='/footer' element={<Footer/>}></Route>
+    <Route path='/signup' element={<Signup/>}></Route>
     
     
 

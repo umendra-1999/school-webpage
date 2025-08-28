@@ -8,7 +8,7 @@ const About = () => {
     <Header/>
         
 
-        <div className="max-w-7xl mx-auto px-6 py-10 space-y-16">
+        <div className="max-w-7xl mx-auto px-6 py-10 space-y-16 ">
 
 
   <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-green-950 text-center">
