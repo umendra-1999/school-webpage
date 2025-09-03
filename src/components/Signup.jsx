@@ -29,7 +29,9 @@ const Signup = () => {
 
   return (
     <>
+   <div className='fixed top-0 w-full  z-50'>
     <Header/>
+    </div>
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-tr from-blue-800 to-teal-700 px-4 py-16">
       <div className="max-w-md w-full bg-blue-900 bg-opacity-90 rounded-lg shadow-lg p-8 text-amber-50">
         <h2 className="text-3xl font-bold mb-6 text-center">Sign Up to CyberForenx School</h2>

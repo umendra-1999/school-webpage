@@ -5,7 +5,9 @@ import Footer from '../reusable components/Footer'
 const About = () => {
   return (
     <>
+    <div className='fixed top-0 w-full  z-50'>
     <Header/>
+    </div><br /><br />
         
 
         <div className="max-w-7xl mx-auto px-6 py-10 space-y-16 ">

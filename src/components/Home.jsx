@@ -16,14 +16,21 @@ const Home = () => {
   };
   return (
     <>
-    <div className="container mx-auto p-4 text-center">
-      {/* Header Section */}
-     <div className="flex flex-col md:flex-row items-center justify-center rounded-3xl bg-amber-100 gap-6 p-6 mb-6 text-center md:text-left">
-  
+    <div className="container mx-auto  text-center">
+
+      
+       {/* Navigation Section imported the header file from the header.jsx from reusable-components */}
+     <div className="fixed top-0 w-full  z-50 ">
+  <Header />
+</div> <br /><br /> 
+
+
+{/* Header Section */}
+<div className="relative pt-28 flex top-6   flex-col md:flex-row items-center justify-center rounded-3xl bg-amber-100 gap-6 p-6 mb-6 text-center md:text-left">
   {/* Left Logo */}
   <img
     className="h-24 w-24 md:h-28 md:w-28 rounded-full object-cover"
-    src="images/cyberforenx_logo.jpeg"
+    src="images/cyberforenx_logo.png"
     alt="CyberForenx Logo"
   />
 
@@ -40,10 +47,6 @@ const Home = () => {
   />
 </div>
 
-
-
-      {/* Navigation Section imported the header file from the header.jsx from reusable-components */}
-      <Header/> 
      
 
       {/* Welcome Section */}

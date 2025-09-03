@@ -24,8 +24,10 @@ const Contact = () => {
 
   return (
     <>
+    <div className='fixed top-0 w-full  z-50'>
     <Header/>
-    <div className="min-h-screen bg-gradient-to-r from-blue-900 via-blue-700 to-blue-900 text-amber-50 flex flex-col items-center px-4 py-16">
+    </div>
+    <div className="min-h-screen text-black relative top-10 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-400  flex flex-col items-center px-4 py-16">
       <h1 className="text-4xl font-bold mb-6">Contact CyberForenx School</h1>
       <p className="mb-10 max-w-xl text-center font-light">
         We’d love to hear from you! Whether you have questions about admissions, courses, or anything else,
@@ -91,7 +93,7 @@ const Contact = () => {
           {/* <p><strong>Office Hours:</strong> Mon - Fri, 9:00 AM - 6:00 PM</p> */}
         </div>
       </div>
-    </div>
+    </div><br /><br />
     <Footer/>
     </>
   )

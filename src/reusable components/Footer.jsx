@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="flex items-center gap-4">
      <Link to="/"> <img
         className="w-20 h-20 rounded-full"
-        src="images/cyberforenx_logo.jpeg"
+        src="images/cyberforenx_logo.png"
         alt="Cyberforenx Logo"
       /></Link>
       <h1 className="font-bold text-red-700 text-3xl md:text-5xl">

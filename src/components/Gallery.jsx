@@ -5,8 +5,10 @@ import Footer from '../reusable components/Footer'
 const Gallery = () => {
   return (
     <>
+    <div className='fixed top-0 w-full  z-50'>
     <Header/>
-         <div className='bg-gradient-to-r from-blue-900 via-blue-700 to-blue-900'>
+    </div><br /><br /><br /><br />
+         <div className='bg-gradient-to-r from-blue-300 via-blue-200 to-blue-400'>
         <section>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       <h1 className='text-4xl md:text-5xl font-bold relative top-6 text-red-700'>ATTRACTIVE IMAGES OF OUR SCHOOLS➡️</h1>
