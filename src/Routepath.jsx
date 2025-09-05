@@ -9,6 +9,10 @@ import Courses from './components/Courses'
 import Header from './reusable components/Header'
 import Footer from './reusable components/Footer'
 import Signup from './components/Signup'
+import Studentinfo from './components/Studentinfo'
+import Teacherinfo from './components/Teacherinfo'
+import Afterloginstudent from './components/Afterloginstudent'
+import Afterloginteacher from './components/Afterloginteacher'
 
 const Routepath = () => {
   return (
@@ -25,6 +29,10 @@ const Routepath = () => {
     <Route path='/header' element={<Header/>}></Route>
     <Route path='/footer' element={<Footer/>}></Route>
     <Route path='/signup' element={<Signup/>}></Route>
+    <Route path='/studentinfo' element={<Studentinfo/>}></Route>
+    <Route path='/teacherinfo' element={<Teacherinfo/>}></Route>
+    <Route path='/afterloginstudent' element={<Afterloginstudent/>}></Route>
+    <Route path='/afterloginteacher' element={<Afterloginteacher/>}></Route>
     
     
 

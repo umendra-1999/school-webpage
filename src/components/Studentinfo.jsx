@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Header from '../reusable components/Header';
 import Footer from '../reusable components/Footer';
 
-const Signup = () => {
+const Studentinfo = () => {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -21,10 +21,16 @@ const Signup = () => {
     e.preventDefault();
     setSubmitted(true);
 
+    localStorage.setItem('studentUser', JSON.stringify({
+    fullName: formData.fullName,
+    email: formData.email,
+   
+  }));
+
     // You can add form validation here if needed before redirect
 
     setTimeout(() => {
-      navigate('/'); // redirect to home page after 2 seconds
+      navigate('/afterloginstudent'); // redirect to home page after 2 seconds
     }, 2000);
   };
 
@@ -37,15 +43,17 @@ const Signup = () => {
       {/* Spacer for fixed header */}
       <div className="pt-28"></div>
 
+
       <main className="min-h-screen flex items-center justify-center bg-gradient-to-tr from-blue-800 to-teal-700 px-4 py-16">
+    
         <div className="max-w-md w-full bg-blue-900 bg-opacity-90 rounded-lg shadow-lg p-8 text-amber-50">
-          <h2 className="text-3xl font-bold mb-6 text-center">Sign Up to CyberForenx School</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center">Sign Up to CyberForenx School </h2>
 
           <form onSubmit={handleSubmit} className="space-y-5">
             <input
               type="text"
               name="fullName"
-              placeholder="Full Name"
+              placeholder="Student Name"
               value={formData.fullName}
               onChange={handleChange}
               required
@@ -83,8 +91,9 @@ const Signup = () => {
               disabled={submitted}
               className="w-full bg-amber-400 text-blue-900 font-bold py-3 rounded hover:bg-amber-300 transition disabled:opacity-60"
             >
-              Create Account
+              Login
             </button>
+            <p className='text-center'>New! Register Here</p>
           </form>
 
           {submitted && (
@@ -100,4 +109,5 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Studentinfo;
+

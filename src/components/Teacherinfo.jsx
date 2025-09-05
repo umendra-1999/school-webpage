@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Header from '../reusable components/Header';
 import Footer from '../reusable components/Footer';
 
-const Signup = () => {
+const Teacherinfo = () => {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -17,16 +17,21 @@ const Signup = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
+ const handleSubmit = (e) => {
+  e.preventDefault();
+  setSubmitted(true);
 
-    // You can add form validation here if needed before redirect
+  // details saved in the local storage....
+  localStorage.setItem('teacherUser', JSON.stringify({
+    fullName: formData.fullName,
+    email: formData.email,
+   
+  }));
 
-    setTimeout(() => {
-      navigate('/'); // redirect to home page after 2 seconds
-    }, 2000);
-  };
+  setTimeout(() => {
+    navigate('/afterloginteacher'); // redirect after 2 seconds
+  }, 2000);
+};
 
   return (
     <>
@@ -45,7 +50,7 @@ const Signup = () => {
             <input
               type="text"
               name="fullName"
-              placeholder="Full Name"
+              placeholder="Faculty Name"
               value={formData.fullName}
               onChange={handleChange}
               required
@@ -100,4 +105,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Teacherinfo;
