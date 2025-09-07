@@ -24,21 +24,19 @@ const Home = () => {
         <div className="pt-28"></div>
 
         {/* Header Section */}
-        <div className="relative top-6 flex flex-col md:flex-row items-center justify-center rounded-3xl bg-amber-100 gap-6 p-2 mb-6 text-center md:text-left">
-          <img
-            className="h-24 w-24 md:h-28 md:w-28 rounded-full object-cover"
-            src="images/cyberforenx_logo.png"
-            alt="CyberForenx Logo"
-          />
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold flex-1">
-            Welcome to CyberForenx School
-          </h1>
-          <img
-            className="h-16 w-16 md:h-20 md:w-20 rounded-full object-cover"
-            src="images/school logo.jpeg"
-            alt="School Logo"
-          />
-        </div>
+        <div className="relative top-6 flex flex-col md:flex-row mt-14 md:mt-0  items-center justify-center rounded-3xl bg-amber-100 gap-6 p-2 mb-6 text-center md:text-left">
+                  <img
+               className="h-24 w-24 md:h-28 md:w-28 rounded-full object-cover"
+              src="images/cyberforenx_logo.png"
+               alt="CyberForenx Logo"/>
+                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold flex-1">
+                   Welcome to CyberForenx School
+                      </h1>   
+            <img
+             className="h-16 w-16 md:h-20 md:w-20 rounded-full object-cover"
+             src="images/school logo.jpeg"
+                alt="School Logo" />
+                </div>
 
         {/* Welcome Section */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-6 p-4">

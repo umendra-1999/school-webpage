@@ -28,7 +28,7 @@ const AfterLoginTeacher = () => {
         <Header />
       </div>
 
-      <div className="pt-28 bg-gradient-to-r from-green-400 to-teal-600 flex flex-col items-center justify-center px-4 py-20 text-white">
+      <div className="pt-28 mt-40 md:mt-0 lg:mt-10 bg-gradient-to-r from-green-400 to-teal-600 flex flex-col items-center justify-center px-4 py-20 text-white">
         
         <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center drop-shadow-lg">
           Welcome Back, {user.fullName}!

@@ -27,7 +27,7 @@ const [user, setUser] = useState(null)
     <div className="fixed top-0 w-full z-50">
         <Header />
       </div>
-     <div className="min-h-screen bg-gradient-to-r from-blue-400 to-indigo-600 flex flex-col items-center justify-center px-4 py-20 text-white">
+     <div className="min-h-screen mt-40 md:mt-0 lg:mt-10 bg-gradient-to-r from-blue-400 to-indigo-600 flex flex-col items-center justify-center px-4 py-20 text-white">
       <h1 className="text-4xl md:text-6xl font-bold mb-6 text-center drop-shadow-lg">
         Welcome to CyberForenx School!
       </h1>

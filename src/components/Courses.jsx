@@ -17,7 +17,7 @@ const Courses = () => {
     <Header/>
     </div>
 
-      <div className="px-4 py-8  relative top-20">
+      <div className="px-4 py-8 mt-40 md:mt-0 lg:mt-10 ">
         <h1 className="text-5xl font-bold text-center text-cyan-400 mb-10">Courses we provide</h1>
 
         {/* Column layout */}
@@ -132,10 +132,10 @@ const Courses = () => {
             </p>
           </div>
         </div>
-      </div> <br /><br /><br />
+      </div> 
 
 
-        <div className=''><br />
+        <div className='mt-20'>
        <div className="container mx-auto bg-amber-400  p-4 w-full sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/4 rounded">
   <h1 className="text-3xl font-bold mb-2 text-center">FOR MORE DETAILS</h1>
   <p className="mb-1 text-2xl font-bold text-center">CONTACT HERE!</p>

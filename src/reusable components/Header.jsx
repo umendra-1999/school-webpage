@@ -3,18 +3,19 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className="bg-blue-500 text-amber-400 border-b-4 border-blue-700 p-4">
-      <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between">
+    <header className="bg-blue-500 text-amber-400 mr-6  border-b-4 border-blue-700 p-4">
+      <div className="container mx-auto  flex flex-col sm:flex-row items-center justify-between">
+        
         {/* Navigation Links */}
-        <nav className="flex flex-wrap gap-4 justify-center sm:justify-start flex-grow">
+        <nav className="flex flex-wrap gap-2  justify-center sm:justify-start flex-grow">
           <NavLink
             to="/"
+            end
             className={({ isActive }) =>
               `px-4 py-2 rounded hover:bg-blue-800 transition ${
                 isActive ? 'bg-blue-700 text-white' : ''
               }`
             }
-            end
           >
             Home
           </NavLink>
@@ -61,7 +62,7 @@ const Header = () => {
         </nav>
 
         {/* Separate Student and Teacher Buttons */}
-        <div className="flex gap-4 mt-4 sm:mt-0 sm:ml-6">
+        <div className="flex gap-4 mt-4 sm:mt-0 sm:ml-6 flex-wrap justify-center sm:justify-start">
           <NavLink
             to="/studentinfo"
             className={({ isActive }) =>
@@ -89,3 +90,4 @@ const Header = () => {
 };
 
 export default Header;
+  

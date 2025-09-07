@@ -7,10 +7,10 @@ const About = () => {
     <>
     <div className='fixed top-0 w-full  z-50'>
     <Header/>
-    </div><br /><br />
+    </div>
         
 
-        <div className="max-w-7xl mx-auto px-6 py-10 space-y-16 ">
+        <div className="max-w-7xl mx-auto mt-40 md:mt-0 lg:mt-10 px-6 py-10 space-y-16 ">
 
 
   <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-green-950 text-center">
