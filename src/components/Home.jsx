@@ -24,7 +24,7 @@ const Home = () => {
         <div className="pt-28"></div>
 
         {/* Header Section */}
-        <div className="relative top-6 flex flex-col md:flex-row mt-14 md:mt-0  items-center justify-center rounded-3xl bg-amber-100 gap-6 p-2 mb-6 text-center md:text-left">
+        <div className="relative top-6 flex flex-col md:flex-row mt-24 md:mt-0  items-center justify-center rounded-3xl bg-amber-100 gap-6 p-2 mb-6 text-center md:text-left">
                   <img
                className="h-24 w-24 md:h-28 md:w-28 rounded-full object-cover"
               src="images/cyberforenx_logo.png"
